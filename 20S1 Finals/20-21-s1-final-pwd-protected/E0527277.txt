@@ -1,0 +1,151 @@
+###CS2040C FINAL AY2021S1###
+
+###INLINE ANSWERS###
+
+#Student Num: A0214561M
+#NUSNET ID: E0527277
+#Q0: A0214561M
+
+#Q1a: n-2
+#Q1b: n/2, middle of DLL floor and/or ceiling depending odd or even length
+
+#Q2a: 2, 3, 4, 5, 6, 7
+#Q2b: 8, 9, 10, 11, 12, 13, 14, 15
+
+###END OF INLINE ANSWERS###
+
+###MULTILINE ANSWERS###
+
+##Q3a START##
+[Line limit : 3]
+A vector (resizable-array) can push(new-v) in O(1) with push_back(new-v), similarly pop() in O(1) with pop_back()
+and top() by accessing last element in O(1) with back().
+SLL can also do all this in O(1) 
+
+
+##Q3a END##
+
+##Q3b START##
+[Line limit : 3]
+SLL can enqueue(new-v) in O(1) with insert_tail(new-v) and dequeue() in O(1) with remove_head() 
+and access the front element front() with the pointer to head.
+##Q3b END##
+
+##Q3c START##
+[Line limit : 4]
+A vector as a binary heap where the root/max is at index 1 O(1) access. Enqueue and extract max are O(logn)
+as the height of the binary heap is O(logn).
+
+##Q3c END##
+
+##Q3d START##
+[Line limit : 4]
+unordered_set can insert(new-v) in O(1), remove in O(1) with erase, and is_exist(v) in O(1) with find
+
+##Q3d END##
+
+##Q3e START##
+[Line limit : 5]
+map the order of each string to its value
+find(i) runs in O(logn) time
+search(v) searches through the whole tree, incrementing iterator O(nlogn)
+insert and remove shifts all the values down or up by erasing the old value and inserting the new value
+watch out for the order of shifting/from end or from start so as not to override O(nlogn)
+##Q3e END##
+
+##Q3f START##
+[Line limit : 5]
+similar to e, map the order and insert and erase based on max order. top is find(max_order)
+all in O(logn)
+
+##Q3f END##
+
+##Q3g START##
+[Line limit : 5]
+map each integer with its frequency
+enqueue is just increase frequency
+get max just check which index is non 0 from 100 to 0
+extract max is just decrease freqeuncy
+O(1)
+
+##Q3g END##
+
+##Q4 START##
+[Line limit : 10]
+calculate the number of days between the 2 dates taking into account leap years
+subtract the the difference between target day type and starting day type from number of days
+divide by 7 and ceiling to find number of target days
+O(1)
+
+
+##Q4 END##
+
+##Q5a START##
+[Line limit : 9]
+AM                  AL
+ abcde                              
+a02001              a: [(b,2), (e,1) ]
+b00000              b: [                   ]
+c00031              c: [ (d,3), (e,1)  ]
+d00000              d: [                   ]
+e10010              e: [ (a,1), (d,1) ]
+
+EL = [(a,b,2), (a,e,1) ,(c,d,3), (c,e,1),(e,a,1), (e,d,1) ]
+##Q5a END##
+
+##Q5b START##
+[Line limit : 5]
+map the vertex to their weights in an unordered_map
+getting vertex weight is then O(1)
+keep track of the internal vertex so existence of edge (u,v) only if either u or v is the internal vertex as 2 leaves have no edge
+##Q5b END##
+
+##Q6 START##
+[Line limit : 9]
+build a min heap out of the array of strings
+insert a dummy at index 0
+for each non-leaf (N/2 to 1), min_heapify
+total is O(N) comparisons but each comparison is O(M)
+complexity is O(NM)
+perform k extract mins = O(KMlogN)
+overall complexity still bounded by O(NM)
+##Q6 END##
+
+##Q7a START##
+[Line limit : 3]
+manhattan distance
+abs(r2-r1) + abs(c2-c1) + 1(inclusive of r1, c1)
+O(1)
+##Q7a END##
+
+##Q7b START##
+[Line limit : 5]
+every other cell still has 1 lego, so unweighted graph
+generate neighbours at each step and check if obstruction or visited cell
+shortest distance with BFS using 2D array
+O(RC) as BFS touch every vertex at most once and edges also O(V) = O(RC)
+##Q7b END##
+
+##Q7c START##
+[Line limit : 7]
+can do DFS first to check if there is a connected component with 0 legos
+BFS with priority queue = dijkstra
+generate neighbours and check if obstruction else weight of edge = whether neighbour has lego (1 or 0), insert into pq
+stop when extract r2, c2 
+O(RClogRC)
+
+##Q7c END##
+
+##Q7d START##
+[Line limit : 9]
+can do DFS first to check if there is a connected component with 0 legos
+BFS with priority queue = dijkstra
+generate neighbours and check if obstruction else weight of edge = #lego on neighbour, insert dist into pq
+stop when extract r2, c2 
+O(RClogRC)
+
+##Q7d END##
+
+###END OF MULTILINE ANSWERS###
+
+###END OF CS2040C FINAL ###

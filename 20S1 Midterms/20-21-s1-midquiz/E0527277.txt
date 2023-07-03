@@ -1,0 +1,76 @@
+###CS2040C MIDTERM QUIZ AY2021S1###
+
+###INLINE ANSWERS###
+
+#Student Num:A0214561M
+#NUSNET ID:E0527277
+#Q0:A0214561M
+
+#Q1a:1024
+#Q1b:heretoo
+#Q1c:3.4000000
+#Q1d:0024CCShiisst
+#Q1e:7
+
+#Q2a:nlogn
+#Q2b:1
+#Q2c:n
+#Q2d:m^2
+#Q2e:llogl
+
+#Q3a:1 permutation, no swap must occur for the loop to break in 1 pass
+#Q3b:720 permutations, each pass pushes largest to back, fix 1 at back so each number swaps with 1 once per loop
+#Q3c: the algorithm is correct as it does stable sort from least sig digit, but i would not use it as runtime is worse than using counting sort as subroutine
+#Q3d:You are a comparison based sorting algorithm that is stable and has worst case O(nlogn), so you are mergesort, but you are not the most frequently used as quicksort is slightly more efficient even though it has same lower bound
+
+#Q4a:No, since each vertex only keeps track of its next vertex, we can only do pairwise comparisons, and if not sorted, duplicates are not next to each other, we also cannot keep track of frequency with another structure, hence we are unable to find duplicate in 1 pass
+#Q4b:del.next is still pointing to aft, but it does not matter as traversing is 1 way and would not hit del, but del is a dangling vertex and wastes space
+#Q4c:D as it has variable size(not A) and has O(1) push_back, back and pop_back (not binary heap)
+#Q4d:D as you can enqueue and dequeue in O(1) and can call size, O(1) to check for max capacity too
+#Q4e:in the ADT, you can initialize 2 queues of pair<string, int> and pair<int, int> where the second variable is a counter of when the object was enqueued. enqueue and dequeue maintain O(1), front just check both queue first pair.second for lower index O(1) 
+
+#Q5a:[-1, 5, 4, 1, 2, 3], put 1 as right child of 5 and put 3 as last element in last level,  3 will stay at level above 2
+#Q5b: call Remove(v) in log(n) time, if not NULL, Insert(v+delta_v) also in log(n) time, heap will maintain its invariant and overall complexity of increase_key is O(logn)
+
+###END OF INLINE ANSWERS###
+
+###MULTILINE ANSWERS###
+
+##Q6a START##
+[Line limit : 15]
+// ahhh, use some kind of bucket sort for floating point numbers
+
+
+use a comparison based mergesort as running out of time
+
+stable_sort() O(nlogn)
+
+//do insertion sort with at most k passes O(NK)
+
+//add trailing zeroes to match highest precision and multiply by that precision to power 10, then do radix sort O((N+b)log_b (max))
+
+
+##Q6a END##
+
+##Q7a START##
+[Line limit : 25]
+int best = NULL;
+for (int i = 0; i < N; i++){
+	int weakest = NULL;
+	for (int j = 0; j < K; j++){
+		if (weakest == NULL || A[(i+j)%N] < weakest){
+			weakest = A[(i+j)%N];
+		}
+	}
+	if (best == NULL || weakest > best){
+		best = weakest;
+	}  
+}
+return best;
+
+//O(NK)
+##Q7a END##
+
+###END OF MULTILINE ANSWERS###
+
+###END OF CS2040C MIDTERM QUIZ###

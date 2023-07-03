@@ -1,0 +1,167 @@
+###CS2040C FINAL AY2021S1###
+
+###INLINE ANSWERS###
+
+#Student Num:
+#NUSNET ID:
+#Q0: [DO NOT FORGET TO REPLACE THIS WITH YOUR STUDENT NUMBER OR NUSNET ID]
+
+#Q1a:
+#Q1b:
+
+#Q2a:
+#Q2b:
+
+###END OF INLINE ANSWERS###
+
+###MULTILINE ANSWERS###
+
+##Q3a START##
+[Line limit : 3]
+
+
+
+##Q3a END##
+
+##Q3b START##
+[Line limit : 3]
+
+
+
+##Q3b END##
+
+##Q3c START##
+[Line limit : 4]
+
+
+
+
+##Q3c END##
+
+##Q3d START##
+[Line limit : 4]
+
+
+
+
+##Q3d END##
+
+##Q3e START##
+[Line limit : 5]
+
+
+
+
+
+##Q3e END##
+
+##Q3f START##
+[Line limit : 5]
+
+
+
+
+
+##Q3f END##
+
+##Q3g START##
+[Line limit : 5]
+
+
+
+
+
+##Q3g END##
+
+##Q4 START##
+[Line limit : 10]
+
+
+
+
+
+
+
+
+
+
+##Q4 END##
+
+##Q5a START##
+[Line limit : 9]
+AM             AL
+ abcde                              
+a              a: [                   ]
+b              b: [                   ]
+c              c: [                   ]
+d              d: [                   ]
+e              e: [                   ]
+
+EL = [                                                                 ]
+##Q5a END##
+
+##Q5b START##
+[Line limit : 5]
+
+
+
+
+
+##Q5b END##
+
+##Q6 START##
+[Line limit : 9]
+
+
+
+
+
+
+
+
+
+##Q6 END##
+
+##Q7a START##
+[Line limit : 3]
+
+
+
+##Q7a END##
+
+##Q7b START##
+[Line limit : 5]
+
+
+
+
+
+##Q7b END##
+
+##Q7c START##
+[Line limit : 7]
+
+
+
+
+
+
+
+##Q7c END##
+
+##Q7d START##
+[Line limit : 9]
+
+
+
+
+
+
+
+
+
+##Q7d END##
+
+###END OF MULTILINE ANSWERS###
+
+###END OF CS2040C FINAL ###
